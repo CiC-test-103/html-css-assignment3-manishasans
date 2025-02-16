@@ -47,6 +47,101 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /** Your CSS Below **/
+* {
+  font-family:'Outfit';
+  padding: 5px;
+  align-items: left;
+}
+body {
+  background-color:var(--clr-stone100);
+  margin: 50px;
+  padding: 50px;
+  font: var(--fs-base);
+  font-size: var(--font-paragraph);
+  font-weight: var(--fw-regular);
+}
+img {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 15px;
+  padding:5px
+ }
+h1 {
+  font-family:'Young-Serif' ;
+  color: var(--clr-stone900);
+}
+h2 {
+  font-family: 'Young-Serif';
+  color: var(--clr-brown800);  
+  padding: 10px;
+}
+h3 {
+  color: var(--clr-rose800);
+}
+section {
+  background-color: white;
+  color: var(--clr-stone600);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+section #prep {
+    margin: 10px 20px;
+    background-color: var(--clr-rose50);
+    border-radius: 15px;
+    /* padding : 5% */
+  
+}
+tr {
+  border-color:var(--clr-stone100) ;
+  text-align: left;
+  padding: 10px;
+  width: 400px;
+}
+th,td {
+  padding: 10px;
+  width: 400px;
+  border-bottom: 1px solid var(--clr-stone150) ;
+}
+td {
+  color: var(--clr-brown800);
+  font-weight: 800;
+}
+th {
+  font-weight: 400;
+} 
+hr {
+  padding: 0;
+}
+ul, ol {
+  list-style: none;
+  text-align:left;
+  padding: 5px;
+  /* text-wrap:wrap; */
+}
+ol {
+    /* padding: 20px; */
+    counter-reset: instr;
+}
+ol li::before {
+  content : counter(instr) '.';
+  counter-increment: instr;
+  margin: 25px;
+  color: var(--clr-brown800);
+  font-weight: 800;
+  font-size:medium;
+}
+ul li::before {
+  content:  "•";
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  margin: left 0px;
+  margin-right: 12px;
+  color: var(--clr-brown800);
+}
 
 /** Attribution CSS **/
 .attribution { font-size: 11px; text-align: center; }
